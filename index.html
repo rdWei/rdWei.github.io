@@ -1,54 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Under Development</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
-      margin-bottom: 20px;
-    }
-    .spinner {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border: 3px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      border-top-color: #3498db;
-      animation: spin 1s ease-in-out infinite;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Under Development</h1>
-    <p>I am currently working on this website. Please check back later.</p>
-    <div class="spinner"></div>
-  </div>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>weird</title>
+    <link rel="alternate" type="application/rss+xml" title="weird" href="/rss.xml">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+    <style type="text/css">
+      img.profile {
+        width: 10em;
+        float: left;
+        padding: 1em;
+      }
+      h2 {
+        padding: 0;
+        margin: 0;
+      }
+      .dark {
+        display: none;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0.5em;
+      }
+      li {
+        margin: 0;
+        padding: 0.1em;
+      }
+      .thumbnail {
+        float: left;
+        clear: both;
+        margin: 0 1em 2em 0;
+        padding: 0;
+      }
+      .jam {
+        clear: both;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+        .dark {
+          display: block;
+        }
+        .light {
+          display: none;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: white;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 42em; margin: 0; padding: 0;">
+      <img class="profile light" alt="Bright profile picture of Weird" src="images/light.png">
+      <img class="profile dark" alt="Dark profile picture of Weird" src="images/dark.jpg">
+      <h1 style="margin: 0; padding: 0.3em 0 0 0">Weird's blog</h1>
+      <p>A xx-year-old developer who gets bored and publishes stuff on GitHub.</p>
+      <p>
+        <a href="https://www.instagram.com/rdWe_i">Instagram</a> |
+        <a href="https://github.com/weird/">GitHub</a>
+      </p>
+    </div>
+
+    <div style="clear:both; float:left; padding: 1em">
+    
+      <!-- START POST-->
+      
+      <h2>Posts</h2>
+      <ul>
+        <li>2024 June 11 - <a href="post/no-article-yet.html">Trying to create a post template</a></li>
+      </ul>
+    </div>
+
+    <!-- END POST -->
+
+    <div style="float: left; max-width: 34em">
+
+
+    <!-- START PROJECTS-->
+
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/rdwei/exaphisher">ExaPhisher</a> - Social Media Phishing Suite written in Python and Php.
+        </li>
+        <li>
+          <a href="https://github.com/rdwei/lawliet">Lawliet</a> - Osint tool to track down social media profiles using a specific username across multiple social network platforms.
+        </li>
+        <li>
+          <a href="https://github.com/rdwei/osinttube">OsintTube</a> - An Easy-to-Use YouTube OSINT Tool. 
+        </li>
+        <li>
+          <a href="https://github.com/rdwei/discdoor">DiscDoor</a> - An Easy-to-Use Discord-Based Backdoor Tool.
+        </li>
+        <li>
+          <a href="https://github.com/rdwei/socialmediahackingtoolki">SocialMediaHackingToolkit</a> - Social Media Hacking Suite. (archived)
+        </li>
+        <li>
+    
+    <!-- ENDPROJECTS-->
+        
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 
